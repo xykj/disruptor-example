@@ -1,8 +1,8 @@
 package com.ashiia.disruptor.example.wordcount;
 
-import com.lmax.disruptor.BatchHandler;
-
 import java.util.HashMap;
+
+import com.lmax.disruptor.BatchHandler;
 
 public class MapReduceHandler implements BatchHandler<MapReduceEntry> {
     private Step step;

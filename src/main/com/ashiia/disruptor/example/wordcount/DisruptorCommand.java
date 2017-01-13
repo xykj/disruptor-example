@@ -1,9 +1,14 @@
 package com.ashiia.disruptor.example.wordcount;
 
-import com.lmax.disruptor.*;
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import com.lmax.disruptor.BatchConsumer;
+import com.lmax.disruptor.ClaimStrategy;
+import com.lmax.disruptor.ConsumerBarrier;
+import com.lmax.disruptor.ProducerBarrier;
+import com.lmax.disruptor.RingBuffer;
+import com.lmax.disruptor.WaitStrategy;
 
 public class DisruptorCommand {
     private final RingBuffer<MapReduceEntry> ringBuffer = new RingBuffer<MapReduceEntry>(MapReduceEntry.ENTRY_FACTORY, WordCount.SIZE,

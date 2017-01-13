@@ -1,9 +1,9 @@
 package com.ashiia.disruptor.example.wordcount;
 
+import java.util.HashMap;
+
 import com.lmax.disruptor.AbstractEntry;
 import com.lmax.disruptor.EntryFactory;
-
-import java.util.HashMap;
 
 public class MapReduceEntry extends AbstractEntry {
     private String mapValue;

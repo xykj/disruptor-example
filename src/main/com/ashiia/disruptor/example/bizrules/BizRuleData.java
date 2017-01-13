@@ -1,12 +1,11 @@
 package com.ashiia.disruptor.example.bizrules;
 
-import com.lmax.disruptor.AbstractEntry;
-import com.lmax.disruptor.EntryFactory;
-
 import java.io.ByteArrayOutputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
-import java.util.Random;
+
+import com.lmax.disruptor.AbstractEntry;
+import com.lmax.disruptor.EntryFactory;
 
 /**
  * User: mbharadwaj
